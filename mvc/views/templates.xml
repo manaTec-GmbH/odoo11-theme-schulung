@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="overview">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>MVC-Overview</h1>
+                    <ul t-if="products">
+                        <li t-foreach="products" t-as="product">
+                            <div>
+                                <a t-attf-href="/mvc/#{ slug(product) }">
+                                    <span t-field="product.name"/>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="detail">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>MVC-Detail</h1>
+                    <h3 t-field="product.name"/>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
