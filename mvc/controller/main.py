@@ -2,6 +2,7 @@
 from odoo import http
 from odoo.http import request
 
+
 class MVCController(http.Controller):
     @http.route('/mvc', type='http', auth="public", website=True)
     def mvc_overview(self, **kwargs):

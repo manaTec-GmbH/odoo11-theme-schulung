@@ -25,9 +25,9 @@
     </template>
 
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
-      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
-        <t t-snippet="snippet_testimonial.snippet_testimonial"
-           t-thumbnail="/snippet_testimonial/static/src/img/ui/snippet_thumb.png"/>
-      </xpath>
+        <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="snippet_testimonial.snippet_testimonial"
+               t-thumbnail="/snippet_testimonial/static/src/img/ui/snippet_thumb.png"/>
+        </xpath>
     </template>
 </odoo>
